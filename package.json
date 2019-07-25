@@ -1,0 +1,26 @@
+{
+  "name": "webcore",
+  "version": "1.0.0",
+  "description": "Webpack core supporting multiple sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gagnau/webcore.git"
+  },
+  "keywords": [
+    "webpack",
+    "web",
+    "core",
+    "multiple",
+    "sites"
+  ],
+  "author": "Georgios Dimitriadis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gagnau/webcore/issues"
+  },
+  "homepage": "https://github.com/gagnau/webcore#readme"
+}
