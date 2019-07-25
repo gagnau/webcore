@@ -1,6 +1,8 @@
-const path = require('path');
+ // TODO: Break this out in common - dev - prod - pattern later
+ const path = require('path');
 
 module.exports = {
+    mode: 'development',
     context: path.resolve(__dirname, '../../sites/testsite'),
     entry: {
         main: './index.js',
@@ -8,5 +10,10 @@ module.exports = {
     output: {
         filename: 'testsite.min.js',
         path: path.resolve(__dirname, '../../dist/testsite/assets/'),
+    },
+    devServer: {
+        contentBase: path.join(__dirname, '../../dist/testsite/'),
+        compress: true,
+        port: 9000
     }
 };

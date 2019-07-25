@@ -4,7 +4,8 @@
   "description": "Webpack core supporting multiple sites",
   "private": true,
   "scripts": {
-    "testsite-build": "webpack --config config/testsite/webpack.config.js --display-error-details"
+    "testsite-build": "webpack --config config/testsite/webpack.config.js --display-error-details",
+    "testsite-start": "webpack-dev-server --config config/testsite/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/gagnau/webcore#readme",
   "devDependencies": {
     "webpack": "^4.37.0",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
