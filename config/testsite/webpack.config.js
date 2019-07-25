@@ -1,5 +1,11 @@
- // TODO: Break this out in common - dev - prod - pattern later
- const path = require('path');
+// TODO: Break this out in common - dev - prod - pattern later
+const path = require('path');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+
+const htmlPlugin = new HtmlWebPackPlugin({
+  template: "./index.html",
+  filename: "../../testsite/index.html"
+});
 
 module.exports = {
     mode: 'development',
@@ -28,4 +34,5 @@ module.exports = {
             }
         ],
     },
+    plugins: [htmlPlugin],
 };
