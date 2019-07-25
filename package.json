@@ -2,9 +2,9 @@
   "name": "webcore",
   "version": "1.0.0",
   "description": "Webpack core supporting multiple sites",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "testsite-build": "webpack --config config/testsite/webpack.config.js --display-error-details"
   },
   "repository": {
     "type": "git",
