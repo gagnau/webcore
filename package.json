@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "testsite-build": "webpack --config config/testsite/webpack.config.js --display-error-details",
-    "testsite-start": "webpack-dev-server --config config/testsite/webpack.config.js"
+    "testsite-server": "webpack-dev-server --config config/testsite/webpack.config.js",
+    "testsite-start": "concurrently --kill-others \"npm run testsite-server\" \"npm run testsite-build\""
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "concurrently": "^4.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

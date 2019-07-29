@@ -9,6 +9,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
     mode: 'development',
+    watch: true,
     context: path.resolve(__dirname, '../../sites/testsite'),
     entry: {
         main: './index.js',
