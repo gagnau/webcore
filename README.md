@@ -1,2 +1,7 @@
-Webpack to support multiple sites
-Each site can independently choose framework and server
+###Webpack to support multiple sites
+
+##Common
+Every site has a common lint
+
+##Individual site
+Can independently choose framework and server
