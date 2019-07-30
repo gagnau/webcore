@@ -32,7 +32,27 @@ module.exports = {
                     loader: "babel-loader",
                     options: { presets: ['@babel/preset-env', '@babel/preset-react'] },
                 }
-            }
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    {
+                        loader: "style-loader"
+                    },
+                    {
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true,
+                            modules: {
+                                localIdentName: '[name]__[local]__[hash:base64:5]',
+                            },
+                        },
+                    },
+                    {
+                        loader: "less-loader"
+                    },
+                ],
+            },
         ],
     },
     plugins: [htmlPlugin],
